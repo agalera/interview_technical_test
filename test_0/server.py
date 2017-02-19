@@ -14,5 +14,5 @@ def test(video_id):
 
 
 if __name__ == "__main__":
-    run(server="gunicorn", workers=8, port=2222,
+    run(server="gunicorn", workers=4, port=2222,
         worker_class='egg:meinheld#gunicorn_worker')
